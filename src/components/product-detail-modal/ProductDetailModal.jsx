@@ -1,8 +1,11 @@
 // src/components/ProductDetailModal.jsx
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../features/cart/cartSlice';
 
 const ProductDetailModal = ({ product, onClose }) => {
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
 
   const handleIncrease = () => {
     setQuantity(quantity + 1);
@@ -15,8 +18,8 @@ const ProductDetailModal = ({ product, onClose }) => {
   };
 
   const handleAddToCart = () => {
-    // Aquí más adelante implementaremos la lógica para añadir al carrito
-    console.log(`Añadiendo ${quantity} de ${product.name} al carrito`);
+    console.log('Adding to cart:', { id: product.id, name: product.name, price: product.price, quantity });
+    dispatch(addItem({ id: product.id, name: product.name, price: product.price, quantity }));
     onClose();
   };
 

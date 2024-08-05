@@ -4,7 +4,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="">
       <AppRoutes />
     </div>
   );

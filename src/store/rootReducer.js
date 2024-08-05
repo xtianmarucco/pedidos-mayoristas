@@ -4,6 +4,7 @@ import cartReducer from '../features/cart/cartSlice';
 
 const rootReducer = combineReducers({
   cart: cartReducer,
+  
 });
 
 export default rootReducer;
