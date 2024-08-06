@@ -5,6 +5,7 @@ import supabase from '../supabaseClient'; // Importa el cliente de Supabase
 
 const CheckoutPage = () => {
   const cartItems = useSelector((state) => state.cart.items);
+  const user = useSelector((state) => state.auth.user); // Obtener el usuario autenticado
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -15,6 +16,7 @@ const CheckoutPage = () => {
 
   const createOrderObject = () => {
     const order = {
+      user_id: user.id, // Asegúrate de incluir esto
       items: cartItems.map((item) => ({
         id: item.id,
         name: item.name,
@@ -27,7 +29,7 @@ const CheckoutPage = () => {
       order_date: new Date().toISOString(),
       status: 'Pending',
     };
-
+  
     return order;
   };
 

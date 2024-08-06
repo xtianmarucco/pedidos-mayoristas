@@ -4,6 +4,7 @@ import { removeItem, clearCart } from '../../features/cart/cartSlice';
 
 import { useNavigate } from 'react-router-dom';
 
+
 const CartModal = ({ onClose }) => {
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
