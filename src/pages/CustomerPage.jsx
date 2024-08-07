@@ -1,34 +1,20 @@
 // src/pages/CustomerPage.jsx
-
+import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard/ProductCard";
 import CustomerNavBar from "../components/customer-navbar/CustomerNavBar";
+import productsData from '../data/productsData.json'; // Importar los datos del archivo JSON
 
-const products = [
-  {
-    id: 1,
-    name: "Producto 1",
-    description: "Descripción del producto 1",
-    price: 29.99,
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 2,
-    name: "Producto 2",
-    description: "Descripción del producto 2",
-    price: 49.99,
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 3,
-    name: "Producto 3",
-    description: "Descripción del producto 3",
-    price: 19.99,
-    image: "https://via.placeholder.com/150",
-  },
-  // Añadir más productos si es necesario
-];
+
 
 const CustomerPage = () => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=>{
+    setProducts(productsData)
+  }, []);
+
+
   return (
     <>
       <CustomerNavBar />

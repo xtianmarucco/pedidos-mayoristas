@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-blue-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
           <Link to="/customer">Pedidos Mayoristas</Link>
@@ -37,18 +37,18 @@ const Navbar = () => {
             <>
             
               <li>
-                <Link to="/order-history" className="text-white hover:underline">
+                <Link to="/order-history" className="text-white font-medium hover:">
                   Order History
                 </Link>
               </li>
               <li>
-                <button onClick={handleLogout} className="text-white hover:underline">
+                <button onClick={handleLogout} className="text-white font-medium hover:">
                   Log Out
                 </button>
               </li>
               <li className="flex items-center space-x-2">
                 <FontAwesomeIcon icon={faUser} className="text-white text-xl" />
-                <span className="text-white">{user.name}</span>
+                <span className="text-white font-medium">{user.name}</span>
               </li>
             </>
           )}
