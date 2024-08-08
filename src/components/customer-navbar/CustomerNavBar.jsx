@@ -54,7 +54,7 @@ const CustomerNavBar = () => {
             <button onClick={handleOpenCart} className="relative h-full flex items-center px-4 hover:bg-blue-700 active:bg-blue-500">
               <FontAwesomeIcon icon={faShoppingCart} className="text-white text-2xl" />
               {totalQuantity > 0 && (
-                <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full px-2 text-sm">
+                <span className="absolute top-9 right-28 bg-red-500 text-white rounded-full px-2 text-sm">
                   {totalQuantity}
                 </span>
               )}

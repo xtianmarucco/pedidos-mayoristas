@@ -1,22 +1,26 @@
 // src/pages/CheckoutPage.jsx
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Navbar from '../components/customer-navbar/CustomerNavBar';
-import supabase from '../supabaseClient'; // Importa el cliente de Supabase
+import OrderSuccessModal from '../components/order-success-modal/OrderSuccessModal';
+
+import supabase from '../supabaseClient';
 
 const CheckoutPage = () => {
+
   const cartItems = useSelector((state) => state.cart.items);
-  const user = useSelector((state) => state.auth.user); // Obtener el usuario autenticado
+  const user = useSelector((state) => state.auth.user);
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-  const totalWithSurcharge = totalPrice * 1.1; // Añade un 10% de recargo
+  const totalWithSurcharge = totalPrice * 1.1;
 
   const createOrderObject = () => {
     const order = {
-      user_id: user.id, // Asegúrate de incluir esto
+      user_id: user.id,
       items: cartItems.map((item) => ({
         id: item.id,
         name: item.name,
@@ -29,92 +33,83 @@ const CheckoutPage = () => {
       order_date: new Date().toISOString(),
       status: 'Pending',
     };
-  
     return order;
   };
 
-  const handleConfirmOrder = async () => {
-    const orderObject = createOrderObject();
+const [isOrderSuccessModalOpen, setIsOrderSuccessModalOpen] = useState(false);
 
-    // Inserta la orden en la base de datos
-    const { data, error } = await supabase
-      .from('orders') // Asegúrate de que el nombre de la tabla coincide
-      .insert(orderObject);
+const handleConfirmOrder = async () => {
+  const orderObject = createOrderObject();
 
-    if (error) {
-      console.error('Error inserting order:', error);
-    } else {
-      console.log('Order inserted successfully:', data);
-      // Aquí puedes limpiar el carrito o mostrar un mensaje de éxito
-    }
-  };
+  const { data, error } = await supabase.from('orders').insert(orderObject);
+
+  if (error) {
+    console.error('Error inserting order:', error);
+  } else {
+    console.log('Order inserted successfully:', data);
+    // Mostrar el modal de éxito
+    setIsOrderSuccessModalOpen(true);
+  }
+};
 
   return (
     <>
-    <Navbar/> 
-    <div className="flex flex-col">
-    
-    <h1 className="text-4xl font-bold mb-6">Checkout</h1>
-    {cartItems.length > 0 ? (
-      <div className="w-full max-w-4xl">
-        <table className="min-w-full bg-white border">
-          <thead>
-            <tr>
-              <th className="py-2 px-4 border-b">Producto</th>
-              <th className="py-2 px-4 border-b">Cantidad</th>
-              <th className="py-2 px-4 border-b">Precio</th>
-              <th className="py-2 px-4 border-b">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {cartItems.map((item) => (
-              <tr key={item.id}>
-                <td className="py-2 px-4 border-b">{item.name}</td>
-                <td className="py-2 px-4 border-b text-center">
-                  {item.quantity}
-                </td>
-                <td className="py-2 px-4 border-b text-right">
-                  ${item.price.toFixed(2)}
-                </td>
-                <td className="py-2 px-4 border-b text-right">
-                  ${(item.price * item.quantity).toFixed(2)}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colSpan="3" className="py-2 px-4 border-t text-right font-bold">
-                Total:
-              </td>
-              <td className="py-2 px-4 border-t text-right font-bold">
-                ${totalPrice.toFixed(2)}
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="3" className="py-2 px-4 text-right font-bold">
-                Otros medios de pago:
-              </td>
-              <td className="py-2 px-4 text-right font-bold">
-                ${totalWithSurcharge.toFixed(2)}
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-        <div className="flex justify-end mt-4">
-          <button
-            onClick={handleConfirmOrder}
-            className="bg-green-500 text-white px-4 py-2 rounded"
-          >
-            Confirm Order
-          </button>
-        </div>
+    {isOrderSuccessModalOpen && <OrderSuccessModal onClose={() => setIsOrderSuccessModalOpen(false)} />}
+      <Navbar />
+      <div className="container mx-auto p-6">
+        <h1 className="text-4xl font-bold mb-6">Checkout</h1>
+        {cartItems.length > 0 ? (
+          <div className="overflow-x-auto ">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="py-2 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Producto</th>
+                  <th className="py-2 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cantidad</th>
+                  <th className="py-2 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Precio</th>
+                  <th className="py-2 px-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {cartItems.map((item) => (
+                  <tr key={item.id}>
+                    <td className="py-2 px-4 whitespace-nowrap">
+                      <div className="text-sm font-medium text-gray-900">{item.name}</div>
+                    </td>
+                    <td className="py-2 px-4 whitespace-nowrap">
+                      <div className="text-sm text-gray-900">{item.quantity}</div>
+                    </td>
+                    <td className="py-2 px-4 whitespace-nowrap">
+                      <div className="text-sm text-gray-900">${item.price.toFixed(2)}</div>
+                    </td>
+                    <td className="py-2 px-4 whitespace-nowrap">
+                      <div className="text-sm text-gray-900">${(item.price * item.quantity).toFixed(2)}</div>
+                    </td>
+                  </tr>
+                ))}
+                <tr>
+                  <td colSpan="3" className="py-2 px-4 text-right font-bold">Total</td>
+                  <td className="py-2 px-4 text-right font-bold">${totalPrice.toFixed(2)}</td>
+                </tr>
+                <tr>
+                  <td colSpan="3" className="py-2 px-4 text-right font-bold">Otros medios de pago</td>
+                  <td className="py-2 px-4 text-right font-bold">${totalWithSurcharge.toFixed(2)}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="flex justify-end mt-6">
+              <button
+                onClick={handleConfirmOrder}
+                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200"
+              >
+                Confirmar Pedido
+              </button>
+            </div>
+          </div>
+        ) : (
+          <p className="text-lg">Tu carrito está vacío. Por favor, añade productos para proceder.</p>
+        )}
       </div>
-    ) : (
-      <p className="text-lg">Your cart is empty. Please add items to checkout.</p>
-    )}
-  </div></>
-   
+    </>
   );
 };
 

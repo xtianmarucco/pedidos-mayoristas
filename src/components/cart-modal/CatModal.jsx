@@ -1,9 +1,9 @@
 // src/components/CartModal.jsx
-import { useSelector, useDispatch } from 'react-redux';
-import { removeItem, clearCart } from '../../features/cart/cartSlice';
-
-import { useNavigate } from 'react-router-dom';
-
+import { useSelector, useDispatch } from "react-redux";
+import { removeItem, clearCart } from "../../features/cart/cartSlice";
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const CartModal = ({ onClose }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -16,7 +16,6 @@ const CartModal = ({ onClose }) => {
 
   const handleClearCart = () => {
     dispatch(clearCart());
-    console.log(cartItems)
   };
 
   const totalPrice = cartItems.reduce(
@@ -26,55 +25,64 @@ const CartModal = ({ onClose }) => {
 
   const handleCheckout = () => {
     onClose();
-    navigate('/checkout');
+    navigate("/checkout");
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white rounded-lg p-6 max-w-lg w-full">
-        <h1 className="text-2xl font-bold mb-4">Shopping Cart</h1>
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white rounded-lg p-8 max-w-lg w-full relative shadow-lg">
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-4 text-gray-500 hover:text-gray-700"
+        >
+          <FontAwesomeIcon icon={faTimes} size="lg" />
+        </button>
+        <h1 className="text-2xl font-bold mb-4">Tu pedido</h1>
         {cartItems.length > 0 ? (
           <div>
             <ul>
               {cartItems.map((item) => (
-                <li key={item.id} className="flex justify-between items-center mb-4">
+                <li
+                  key={item.id}
+                  className="flex justify-between items-center mb-4"
+                >
                   <div>
                     <h2 className="text-xl font-bold">{item.name}</h2>
-                    <p>Quantity: {item.quantity}</p>
-                    <p>Price: ${item.price.toFixed(2)}</p>
+                    <p>Cantidad: {item.quantity}</p>
+                    <p>Precio: ${item.price.toFixed(2)}</p>
                     <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
                   </div>
                   <button
                     onClick={() => handleRemoveItem(item.id)}
-                    className="bg-red-500 text-white px-4 py-2 rounded"
+                    className="text-red-500 hover:text-red-700 flex transition-colors duration-200"
                   >
-                    Remove
+                    <FontAwesomeIcon className="mr-2" icon={faTrash} size="lg" />
+                    {/* <span >Eliminar </span> */}
                   </button>
                 </li>
               ))}
             </ul>
             <div className="flex justify-between items-center mt-6">
-              <p className="text-xl font-bold">Total Price: ${totalPrice.toFixed(2)}</p>
-              <button onClick={handleClearCart} className="bg-red-500 text-white px-4 py-2 rounded">
-                Clear Cart
+              <p className="text-xl font-bold">
+                Total: ${totalPrice.toFixed(2)}
+              </p>
+              <button
+                onClick={handleClearCart}
+                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors duration-200"
+              >
+                Vaciar carrito
               </button>
             </div>
             <button
               onClick={handleCheckout}
-              className="w-full bg-green-500 text-white py-2 mt-4 rounded"
+              className="w-full bg-green-500 text-white py-2 mt-4 rounded hover:bg-green-600 transition-colors duration-200"
             >
-              Proceed to Checkout
+              Continuar compra
             </button>
           </div>
         ) : (
-          <p className="text-lg">Your cart is empty.</p>
+          <p className="text-lg">No hay productos en tu orden.</p>
         )}
-        <button
-          onClick={onClose}
-          className="w-full bg-blue-500 text-white py-2 mt-4 rounded"
-        >
-          Close
-        </button>
       </div>
     </div>
   );
