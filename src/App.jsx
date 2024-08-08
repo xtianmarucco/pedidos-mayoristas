@@ -4,7 +4,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <AppRoutes />
     </div>
   );
