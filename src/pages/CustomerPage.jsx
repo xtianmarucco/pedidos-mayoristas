@@ -48,18 +48,18 @@ const CustomerPage = () => {
   };
 
   return (
-    <div className="h-full">
+    <div>
       <CustomerNavBar />
-      <div className="flex w-auto h-full">
+      <div className="flex w-auto">
         <ProductsSidebar
           categories={categories}
           onSelectCategory={handleCategorySelect}
           onSearch={handleSearch}
         />
-        <div className=" w-3/4 flex flex-col pl-10 pt-10 flex-grow">
+        <div className="h-screen w-3/4 flex flex-col pl-10 pt-10 overflow-y-auto">
           <h1 className="text-4xl font-bold mb-6">Lista de Productos</h1>
-          <div className="h-full">
-            <div className="h-full flex flex-wrap  justify-left">
+          <div className="">
+            <div className="flex flex-wrap  justify-left">
               {filteredProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

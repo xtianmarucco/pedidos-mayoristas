@@ -11,7 +11,8 @@ const ProductsSidebar = ({ categories, onSelectCategory, onSearch }) => {
   };
 
   return (
-      <aside className="w-1/4 p-4 bg-blue-700 h-auto text-white">
+    <>
+      <aside className="w-1/4 p-4 bg-blue-700 text-white">
         <ProductSearch onSearch={onSearch} />
         <ul>
           <li
@@ -41,6 +42,7 @@ const ProductsSidebar = ({ categories, onSelectCategory, onSearch }) => {
           ))}
         </ul>
       </aside>
+    </>
   );
 };
 

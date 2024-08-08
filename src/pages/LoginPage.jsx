@@ -45,7 +45,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-6">Login</h1>
       <form onSubmit={handleLogin} className="w-full max-w-sm">
         {error && <p className="text-red-500 mb-4">{error}</p>}

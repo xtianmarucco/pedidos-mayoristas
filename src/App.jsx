@@ -4,7 +4,7 @@ import './index.css';
 
 function App() {
   return (
-    <div>
+    <div className="cursor-ice-cream" >
       <AppRoutes />
     </div>
   );
