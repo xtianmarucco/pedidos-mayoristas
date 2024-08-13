@@ -1,16 +1,12 @@
-// src/components/OrderSuccessModal.jsx
+// src/components/OrderFailureModal.jsx
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { useDispatch } from 'react-redux';
-import { clearCart } from '../../features/cart/cartSlice';
+import { faTimesCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-const OrderSuccessModal = ({ onClose }) => {
-  const dispatch = useDispatch();
+const OrderFailureModal = ({ onClose }) => {
   const navigate = useNavigate();
 
   const handleClose = () => {
-    dispatch(clearCart());
     onClose();
     navigate('/customer');
   };
@@ -22,10 +18,10 @@ const OrderSuccessModal = ({ onClose }) => {
           <FontAwesomeIcon icon={faTimes} size="lg" />
         </button>
         <div className="flex justify-center mb-4">
-          <FontAwesomeIcon icon={faCheckCircle} size="4x" className="text-green-500" />
+          <FontAwesomeIcon icon={faTimesCircle} size="4x" className="text-red-500" />
         </div>
-        <h2 className="text-2xl font-bold mb-4">¡Pedido Completado!</h2>
-        <p className="text-gray-700 mb-6">El pedido se ha completado con éxito, en breve confirmaremos la misma.</p>
+        <h2 className="text-2xl font-bold mb-4">¡Error en el Pedido!</h2>
+        <p className="text-gray-700 mb-6">Hubo un problema al procesar tu pedido. Por favor, inténtalo de nuevo.</p>
         <button
           onClick={handleClose}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200"
@@ -37,4 +33,4 @@ const OrderSuccessModal = ({ onClose }) => {
   );
 };
 
-export default OrderSuccessModal;
+export default OrderFailureModal;
