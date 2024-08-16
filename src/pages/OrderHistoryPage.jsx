@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Navbar from "../components/customer-navbar/CustomerNavBar";
 import supabase from "../supabaseClient";
+import { Loader } from "../components/loader/loader";
 
 const OrderHistoryPage = () => {
   const [orders, setOrders] = useState([]);
@@ -38,8 +39,8 @@ const OrderHistoryPage = () => {
       <div className="flex flex-col p-8">
         <h1 className="text-4xl font-bold text-left mb-6">Historial de pedidos</h1>
         {loading ? (
-          <p>Loading...</p>
-        ) : orders.length > 0 ? (
+<Loader/>
+) : orders.length > 0 ? (
           <table className="min-w-full divide-y divide-gray-400">
             <thead className="bg-gray-50">
               <tr>

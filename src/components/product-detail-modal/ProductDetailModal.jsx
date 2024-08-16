@@ -27,7 +27,7 @@ const ProductDetailModal = ({ product, onClose }) => {
 
   return (
  
-    <div className="h-full w-full fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center  p-5">
+    <div className="h-full w-full fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center  p-5"   onClick={onClose}>
       <div className="bg-white rounded-lg p-8 max-w-[800px] justify-between flex relative">
         <button onClick={onClose} className="absolute top-4 right-5 text-gray-500 hover:text-gray-700">
           <FontAwesomeIcon icon={faTimes} size="lg" />
