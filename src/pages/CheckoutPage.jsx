@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Navbar from "../components/customer-navbar/CustomerNavBar";
 import OrderSuccessModal from "../components/order-success-modal/OrderSuccessModal";
 import OrderFailureModal from "../components/order-fail-modal/OrderFailureModal";
-
+import Loader from "../components/loader/loader";
 import supabase from "../supabaseClient";
 
 const CheckoutPage = () => {
@@ -36,12 +36,14 @@ const CheckoutPage = () => {
     return order;
   };
 
+  const [loading, setLoading] = useState(false); // Establece loading en false inicialmente
   const [isOrderSuccessModalOpen, setIsOrderSuccessModalOpen] = useState(false);
   const [isOrderFailureModalOpen, setIsOrderFailureModalOpen] = useState(false);
-  
+
   const handleConfirmOrder = async () => {
+    setLoading(true); // Muestra el Loader
     const orderObject = createOrderObject();
-  
+    
     const { data, error } = await supabase.from('orders').insert(orderObject);
   
     if (error) {
@@ -51,6 +53,7 @@ const CheckoutPage = () => {
       console.log('Order inserted successfully:', data);
       setIsOrderSuccessModalOpen(true);
     }
+    setLoading(false); // Oculta el Loader
   };
 
   return (
@@ -64,7 +67,9 @@ const CheckoutPage = () => {
       <Navbar />
       <div className="container mx-auto p-6">
         <h1 className="text-4xl font-bold mb-6">Checkout</h1>
-        {cartItems.length > 0 ? (
+        {loading ? (
+          <Loader /> // Muestra el Loader cuando está en proceso
+        ) : cartItems.length > 0 ? (
           <div className="overflow-x-auto ">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
