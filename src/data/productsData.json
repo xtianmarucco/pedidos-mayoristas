@@ -1,0 +1,410 @@
+[
+  {
+    "id": "cadbury frutillla",
+    "name": "Tentación con Cadbury Yogur de Frutilla",
+    "description": "Helado de Crema Americana con chocolate con leche relleno con yogur, frutilla y arroz inflado",
+    "price": 29.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/CADBURY_FRUTI-360x360.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Cadbury con Almendras",
+    "name": "Tentación con Cadbury con Almendras",
+    "description": "Helado de chocolates con chocolate con leche con Almendras.",
+    "price": 49.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/TENTACION_CH_ALMENDRAS-360x360.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Chocolate",
+    "name": "Tentación Chocolate",
+    "description": "Helado de menta granizada con baño de repostería.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/CHOCOLATE.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Menta Granizada",
+    "name": "Tentación Menta Granizada",
+    "description": "Helado de menta granizada con baño de repostería.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/tentacion-menta.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Chocolate con almendras",
+    "name": "Chocolate con almendras",
+    "description": "Helado de Chocolate con almendras.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/CH_ALMENDRAS.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Crema americana",
+    "name": "Tentación Crema americana",
+    "description": "Helado de Crema Americana.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/CR-AMERICANA.png",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Dulce de leche",
+    "name": "Tentación Dulce de leche",
+    "description": "Crema Helada sabor Dulce de Leche.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/DDLECHE.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Dulce de leche granizado",
+    "name": "Tentación Dulce de leche granizado",
+    "description": "Crema helada sabor dulce de leche granizado con baño de repostería.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/DDL-GRANIZ.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Frutilla",
+    "name": "Tentación Frutilla",
+    "description": "Crema helada sabor Frutilla.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/FRUTILLA.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Granizado",
+    "name": "Tentación Granizado",
+    "description": "Helado de crema americana granizada con baño de repostería.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/GRANIZADO.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Limón",
+    "name": "Tentación Limón",
+    "description": "Helado de agua de Limón.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/LIMON.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Tentación Vainilla",
+    "name": "Tentación Vainilla",
+    "description": "Crema Helada sabor a Vainilla.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/VAINILLA.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Crema Cookie",
+    "name": "Tentación Crema Cookie",
+    "description": "Helado de crema americana con galletas de chocolate.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/CR-COOKIE.jpg",
+    "category": "Tentación"
+  },
+  {
+    "id": "Torta Cookies Mousse",
+    "name": "Torta Cookies Mousse",
+    "description": "Torta con helado de crema americana y dulce de leche, con corazón de dulce de leche y galletitas Milka Mousse trozadas.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mGzQNl77-IpIjzMES4dGCtZqogPQwuz48Z-z-lHWwRS_TwSc-3rtZip_6whgft7-52OL182FYqydUqC-3D-3admB26bxKHPsXF6pV7elnsrhAe4JPU3Rcwe2NEtR1s-kidrLwVCWj8JBq3Y7KVKxQuW5scuJrSEXa6CHz7fMwTxaVFNLmyjnvfvWZvScphldUx8idHbNvpiJjFiZJYbkOYw",
+    "category": "Tortas heladas"
+  },
+  {
+    "id": "Torta Cookies and Cream",
+    "name": "Torta Cookies and Cream",
+    "description": "Torta con helado de crema americana, con corazón de dulce de leche y galletitas Oreo.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mz9r0cnBhP-TFyi5i4N6BMaH6bHetVTekJ-aRjpVXrnCbZcGC7iGRu_KD1If2wNKrE0QoDJ7J8WmiDuF6M_1zjbf3g-FGKT_KijZLTNgMt8YeVVu9Gh1P7qX7tqrE-Vqq5IdQcWoxrBoUFzjJjAk2vGwmUhubYo7QPhxpvgKH-HfxXfp5eAvol13wDThgFkj3NYjZTwqOv_MASJMP5sAcPQ",
+    "category": "Tortas heladas"
+  },
+  {
+    "id": "Torta Grido",
+    "name": "Torta Grido",
+    "description": "Torta con helado de chocolate, dulce de leche y crema americana, rellena con dulce de leche y decorada con salsa de chocolate.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/Torta-Grido360X360.jpg",
+    "category": "Tortas heladas"
+  },
+  {
+    "id": "Pizza tipo Casera",
+    "name": "Pizza tipo Casera",
+    "description": "Pizza con doble masa crocante, mucha salsa de tomate y doble queso provolone y mozzarella.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2018/06/Pizza-tipo-casera.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Pizza de Cebolla y Mozzarella",
+    "name": "Pizza de Cebolla y Mozzarella",
+    "description": "Crema Helada sabor Dulce de Leche.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/Muza-y-cebolla.png",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Pizza de Jamón y Mozzarella",
+    "name": "Pizza de Jamón y Mozzarella",
+    "description": "Pizza con salsa de tomate, queso mozzarella y jamón cocido.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/muza-Jamon.png",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Pizza Integral",
+    "name": "Pizza Integral",
+    "description": "Pizza de harina integral con salsa de tomate y queso mozzarella supercongelada.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2019/10/integral3.png",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Pizza",
+    "name": "Pizza",
+    "description": "Pizza con salsa de tomate, queso mozzarella, y queso provolone precocida supercongelada.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2018/06/pizza-frizzio.png",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Mini Pizza",
+    "name": "Mini Pizza",
+    "description": "Pizzetta con salsa de tomate, queso mozzarella y queso provolone precocida supercongelada.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2017/01/bastoncitos-1.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Bastoncitos",
+    "name": "Bastoncitos",
+    "description": "Crocantes bastones de la más fresca mozzarella.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2017/01/bastoncitos-1.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Pechuguitas",
+    "name": "Pechuguitas",
+    "description": "Carne de pechuga de pollo rebozadas.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2017/01/pechuguitas.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Hamburguesas",
+    "name": "Hamburguesas",
+    "description": "Hamburguesas de Carne supercongeladas",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2022/04/hamburguesas.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Empanadas cs",
+    "name": "Empanadas de carne suave",
+    "description": "Empanadas de carne suave",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mdHGoC1noo1hjDJ-fFZgutYIV59Z78uf7z7lK0kOGHWBXoCXHIrniTSRcKWS4JTdsgm_Q5ccLDaeK-tNASkTnHC6Pq2JeXYzl7sYec2gIfnXjHkFP-579SlSxE5RlXWZAe80dV4VomYAHKHM47xwVPDaoenxUhoF_aR9Sns4F8LyY3P5kAZ0I_83rkfBzDF9OQMk-y4U-Pv5ICpKG_MbP8g",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Empanadas jq",
+    "name": "Empanadas de Jamon y queso",
+    "description": "Empanadas de Jamon y queso",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mWaEkbHuYs16sr4czk8M2I7yuE2J3tSx-7SqR9Ywqz1SH1sipzvn45KuPfx-yw04qUy5FQ7uIWhNIqTzURi4vd0WNaFHaesRch2oGfvbERnq9FwbkHfnuPL49IjunXSrO9jJm1KEF0EsyM4dp9uqE8NX3ycutjf31xXl08bj1_fx1AmLVvhC7mKrVPyS0pwQ3V1O2kS_GJTJmtpsazFiaUQ",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Papas Bastón",
+    "name": "Papas Bastón",
+    "description": "Papas Prefritas bastón supercongeladas libres de gluten",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2022/04/papas.jpg",
+    "category": "Frizzio"
+  },
+  {
+    "id": "Palito Bombón",
+    "name": "Palito Bombón",
+    "description": "Palito de Crema helada sabor chantilly cubierta de baño de repostería.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4m-u_LXOfFMadC_shagYMXZ__Jd8p0cZlj_heBs-evjf0gLkE9x4klyB_dC_z6hXweo9-ufmbkTsJjcjMcQJdFDFVAFGt2RC1SMoJth19Lun2F8DSAxYlJdG4MbEp3DRk7sv9I-ADmWQHxfGWeOfaRrVgEe0cpBxfj-vGOYA-AHG9tM1ErvpJU-ajiA_Nm_6rNyIq3o7tgt1eN5ULMaZTJxA",
+    "category": "Palitos"
+  },
+  {
+    "id": "Palito Cremoso Americana",
+    "name": "Palito Cremoso Americana",
+    "description": "Palito de crema helada sabor chantilly.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mck8cmqDKJt--cwu88Gb9HR3B7SYJuxTcyi2Nmmdi3U7zlWI8chzzOXn2EkCaGg280_Nx9X8xZJeb-zhuTS-J_z22ar9Pi1nuoYrClODSv4_kp1baj_FZeq3X_0-m2hfFEwkx4wZsD281TuTb3_wdiRCsRhxpTeBQvXvOwhokfbCHXPMGuXk_lFQGJQWM4G7_8JTBTd7HNM1AkhCVkxtILQ",
+    "category": "Palitos"
+  },
+  {
+    "id": "Palito Cremoso Frutilla",
+    "name": "Palito Cremoso Frutilla",
+    "description": "Palito de crema helada de frutilla con pulpa de frutilla.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mM_nWlz6WUbuqXnQZxZgGZOBsPSkS4qdMWMaGLvc4y9sFj2LoGvq1cqYT_usFdvF2l1NDrRKGv8zucNaeCwBFsoVeD2XxutT_Vx4M4k37fFwEd3-LKsgVrYFH5a2QGpCqB0jpQ3K5hRMgP0qud6cTySkl0Hi28XIMD1-155VEKRWlHzIsMDHFskYr0FrbUr_soJjPsE-TdQ-kNRJL3DjMQg",
+    "category": "Palitos"
+  },
+  {
+    "id": "Palito Frutal Limón",
+    "name": "Palito Frutal Limón",
+    "description": "Palito helado de agua de limón con jugo natural exprimido.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mM_nWlz6WUbuqXnQZxZgGZOBsPSkS4qdMWMaGLvc4y9sFj2LoGvq1cqYT_usFdvF2l1NDrRKGv8zucNaeCwBFsoVeD2XxutT_Vx4M4k37fFwEd3-LKsgVrYFH5a2QGpCqB0jpQ3K5hRMgP0qud6cTySkl0Hi28XIMD1-155VEKRWlHzIsMDHFskYr0FrbUr_soJjPsE-TdQ-kNRJL3DjMQg",
+    "category": "Palitos"
+  },
+  {
+    "id": "Palito Frutal Frutilla",
+    "name": "Palito Frutal Frutilla",
+    "description": "Palito helado de agua de frutilla con pulpa de frutilla.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mscQSfKqhj-EVdYTT8nae_oUazMPdwrGLAOnQlTlU7wpCtPQzk9ZXxYZsZQmYByN5H8nBQTvYFjLHlqdwmiQCta9NvBBxZdTChBeq1y6n-PO9mhmwaOyPvQa86NPh9O_zRCtF-bTEEpHF6zXq1HPg_PR1Sk-6yaTkT4CkiaWj9MTwSrYIFVfC57uCTNDSnPTEobL9VsllP0EwtQb8nawovA",
+    "category": "Palitos"
+  },
+  {
+    "id": "Palito frutal Naranja",
+    "name": "Palito frutal Naranja",
+    "description": "Palito helado de agua de naranja con jugo natural exprimido.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4m38DCZmKLCoyKaGszcdtyHn3MjNfBIdaonVc2YJ6niCnSG-7ixik9Jgq-yUICp12YvwikthfTrzKGTUGtK42DHtSWct21ppynAvDPtfgCFmZ8luhnb8YOyawYA-Lo57KfB7Vk97SRKOWiLrtze2hzCmfRcQDcB3M1qn_q-iVx8rpRuqqkTwV-I5YGkcYD4vCW53z6QYLNk3VeCKhaZ1EOWQ",
+    "category": "Palitos"
+  },
+  {
+    "id": "Pote 3L Nº1",
+    "name": "Pote 3L Nº1",
+    "description": "Helado de crema americana, chocolate y dulce de leche.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2016/09/familiar3lt-1.jpg",
+    "category": "Familiar"
+  },
+  {
+    "id": "Pote 3L Nº2",
+    "name": "Pote 3L Nº2",
+    "description": "Crema helada sabor dulce de leche granizado, crema americana y frutilla.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2016/09/familiar3lt-2.jpg",
+    "category": "Familiar"
+  },
+  {
+    "id": "Pote 3L Nº3",
+    "name": "Pote 3L Nº3",
+    "description": "Helado de crema granizada, frutilla y vainilla.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2016/09/familiar3lt-3.jpg",
+    "category": "Familiar"
+  },
+  {
+    "id": "Pote 3L Nº4",
+    "name": "Pote 3L Nº4",
+    "description": "Crema helada sabor Vainilla, dulce de leche granizado y Chocolate.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2016/09/familiar3lt-4.jpg",
+    "category": "Familiar"
+  },
+  {
+    "id": "Bombón Crocante",
+    "name": "Bombón Crocante",
+    "description": "Crema helada de dulce de leche cubierto con chocolate con leche, baño de repostería y cereal inflado.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4m0eICnyJlOkATGGyACxAD7zwJ-WusLNtZCbEmI_bo_CrMdltmMz0xbE2FFpOM7ec824jfLNVP6UcjQJZsRKHtPM6dh3pnNd0_fdg_Wr02C2w9fq4hDD5S5XtUYMDcc4ZBnDGJguevnavxE66bF_wVlEi6InxdgcXnph-qxepWov634wUE9o5DlbCZA3UNNNs8JenslvBkLRmZPki9gLchNA",
+    "category": "Bombones"
+  },
+  {
+    "id": "Bombón Suizo",
+    "name": "Bombón Suizo",
+    "description": "Crema helada de dulce de leche y crema americana, cubierto con baño de repostería.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mWqKtnJ_H1qB1svajq-t1V4lMGE_6bX9WkRxtzn_YobtRTGxhfxtaZQ392MSuTCMPmV9VHTQEK3f6vCCzGDLruFvnvhsu2JbHWzUctdobvhEuRAIqO3v4aIond92soITGOVvk85LF6lBsUDRUSzBDoosrJr8bRPfl-Wdc7mCyviJBQSSa6KeAHnA-CkAOfNV23L3QfuU_1u2DzzQzQob2GQ",
+    "category": "Bombones"
+  },
+  {
+    "id": "Bombón Escocés",
+    "name": "Bombón Escocés",
+    "description": "Crema helada de chocolate y crema americana, con corazón de dulce de leche repostero, cubierto con baño de repostería y crocante de maní.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mYFiOzCWfNYrfrqZIKU41-ch-eXT5SNzzIArtteHhndPyBccAwUf2uu7QrUYnjoELtrWqH01ePGo1zyk06aGCOc-UkUXOt_4iMpwXtSISesSQ_4pIHC8HD13tmyhnuN-tGR1T_mlL4YOCNU-UGxzFAwFjO4U3UoVm4LoS3m9SNDTnDWXuvEbO8AxTdcm_iFyNO5fy78IQbVqO3jEuXMET1A",
+    "category": "Bombones"
+  },
+  {
+    "id": "Bombón Split",
+    "name": "Bombón Split",
+    "description": "Crema helada sabor a vainilla, con un suave toque de dulce de leche, recubierta con baño de repostería.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mrXaXfo4_BDhOm30E-xsV5MAx_AIlIbHoG1cCcPC69aupy-cDl2PFmSAS2uhcS7FR_T7fBu0msQDw6lqTGbfv20bEWu4DaZnPAETR8qIut95WLJqj0gylMCvdHNhGgE_PvghJA2p2G1eOOtucC-eNmKnBxkLXDcV9jUHTqtrXKOVcxc5p1Gc8YVDSOSrldYAMyIdhZRcRqtpYKL7DuY7Qag",
+    "category": "Bombones"
+  },
+  {
+    "id": "Bombón Shot",
+    "name": "Bombón Shot",
+    "description": "Crema helada sabor a vainilla, con un suave toque de dulce de leche, recubierta con baño de repostería.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mFTC2Pqd2w2AfsatIRW4I1AAY09coWJm_RcCbdIOg-aPU1fvmv2Xvwzh8pBfBkg-ZEmumkFd4nRQ3gwfLpXhmmbQ5EZwPpXOvXVkFkPZT5bFpfzY5BL_fGuEYHR1kVivdlaBtofcYnW8zqe-Ts1CluunfUIQ4L2PCyV2YUmk8yxgW6xWVg2zfjgIsMgFEGvO6ZGD41hUN-TPnu0v2G12diA",
+    "category": "Bombones"
+  },
+  {
+    "id": "Casatta",
+    "name": "Casatta",
+    "description": "Helado de crema sabor frutilla, chocolate y crema americana.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4m1Qd5PZaxGtsenUldVQCOak0qOsUJqwvHKQ4nh6IMoMPdztGz8Xs4JgIzNevekCYrulKWeqlmPUaIxcOLWN8BN0gEMTvjDZvhCVmsL9QucgZpFaerorG-zzYGeV9AH7KUwRaAwuFyB3yn6Zy2gZ1Fe9W42PgY2PEfo7Q7cSCGiFcXrlE0B87LEgxKHGkST04wOx6tuXzYGy69F_zOOtqnMQ",
+    "category": "Postres"
+  },
+  {
+    "id": "Almendrado",
+    "name": "Almendrado",
+    "description": "Crema helada sabor americana cubierta con crocante de maní.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4miOOZLUkHtXIlZNxMUWILugByvx5jv9xWBADekLz8HW3oHsMUctOsjhst6t9a5a_ZoRUGQu5ZGCmTbObNwOySbSBnLsE38HqqwDIZobkyAmoQbp4YzTJT3BPoaGi5IRskUALqz3jHK4JG_bIsDTHT7vUJ1aEQXbSedowtZ0UHmXk3OHkzyVf_eAmwDeNpnxG2v214mlaIs41kPYCRCMyExQ",
+    "category": "Postres"
+  },
+  {
+    "id": "Crocantino",
+    "name": "Crocantino",
+    "description": "Una deliciosa composición de crema helada de chocolate y dulce de leche, con corazón de dulce de leche repostero y delicado bañado de repostería.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mVtBA2yru_mm8p23mXLx42mrAmis_vEZ1RhUmyRLgkkH_AjXGa2eOPYJCvMGkH8g0ut86vA3SXclMU1CtVNGSyMOfBj9NaGa1QJzbLTOpnCAAM4D19hTL7oClgfExEuU_smkSSTooezj1Ds6Lg9MIAkO6l_zNujZRCcUndx11mXenNG_LpqTY_0KrfObeyo_S5PvEdkHxfS7AOJxw8ipQRg",
+    "category": "Postres"
+  },
+  {
+    "id": "Delicia",
+    "name": "Delicia",
+    "description": "Barra helada de crema americana y crema helada sabor chocolate con chocolate con leche con maní, relleno con dulce de leche con cacao.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mZ-kpgJC5GhufsSK_1mjWNKxghojLXxH1sdcGf9vMFkoonwod8bs4MvPgl3kvC7j2uOaIloN9Co0q0Z7O1gcnQn6I0Qr67Hvubg8TXN4742xv21UGq0YTo5FpuMuOusHi_NmzXwC1ob4UKInhJHM40Ig5PzDCPBLnTeB2j4Qz-MHoaPaDpyRhYLgEFZjnMDACQqY0EsCCIemYDMfLd-03Dw",
+    "category": "Postres"
+  },
+  {
+    "id": "Semifrio Tiramisu",
+    "name": "Semifrio Tiramisu",
+    "description": "Postre cremoso sabor tiramisú, con bizcochuelo de vainilla y almíbar con café, decorado con cacao.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mhur4VMJHUqkzODzU_cWWb1fwA1p6iB2BMN5UGYL_TaVZ3ZVNlkRBxeTnDp8CqNG-IvXv9hiw3_FgoSu9-pU6HXo1H-g2uVT2e1gK-BDbTHupG9G6PqHEpj_vfPlCqp5jcTwhcRhiNT-nu2B841y2NZRHNXfUsvVUc2oFSsp1E92Qoz2z9ghK-CXTOMYAvRo-hGVABMBbYOzQ103b_Xvb_w",
+    "category": "Postres"
+  },
+  {
+    "id": "Semifrio Chocolate",
+    "name": "Semifrio Chocolate",
+    "description": "Postre cremoso sabor chocolate y dulce de leche, con bizcochuelo de chocolate y almíbar decorado con ganache de chocolate y crocante de maní.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mg6_q9ZuRV0AtNXZdiw6kQfrsI92UZ_HuQAbYQ1UVZBM3HjOYj-HGul1TyBT2a2TcrJW13ZVk4wQOVG6IqMjycOOhjPV1SyRp3trEMsssg6aRsl0kZzRe5Fk2eCcbL2iurxRZcuBgC15DIO7zJf1tcRttzBSHsqp8ib-ge407zufnN152ii8DTLMmjD8ZrWoXVNQMIOBz85oCGXbycWT9DA",
+    "category": "Postres"
+  },
+  {
+    "id": "Semifrio Cheesecake",
+    "name": "Semifrio Cheesecake",
+    "description": "Postre cremoso sabor mascarpone, con bizcochuelo de vainilla y almíbar decorado con pulpa de frutos del bosque.",
+    "price": 19.99,
+    "image": "https://1h56vq.sn.files.1drv.com/y4mFTC2Pqd2w2AfsatIRW4I1AAY09coWJm_RcCbdIOg-aPU1fvmv2Xvwzh8pBfBkg-ZEmumkFd4nRQ3gwfLpXhmmbQ5EZwPpXOvXVkFkPZT5bFpfzY5BL_fGuEYHR1kVivdlaBtofcYnW8zqe-Ts1CluunfUIQ4L2PCyV2YUmk8yxgW6xWVg2zfjgIsMgFEGvO6ZGD41hUN-TPnu0v2G12diA",
+    "category": "Postres"
+  },
+  {
+    "id": "Semifrio Frutilla",
+    "name": "Semifrio Frutilla",
+    "description": "Postre cremoso sabor frutilla y americana con pulpa de frutillas.",
+    "price": 19.99,
+    "image": "https://argentina.gridohelado.com/wp-content/uploads/2023/10/POSTRE-CREMOSO-FRUTILLA-Y-AMERICANA-1-e16978440428361.png",
+    "category": "Postres"
+  }
+]

@@ -3,8 +3,13 @@ import AppRoutes from './routes';
 import './index.css';
 
 function App() {
+
+
+
+  
+  
   return (
-    <div className="">
+    <div className="cursor-ice-cream"  >
       <AppRoutes />
     </div>
   );
