@@ -1,5 +1,4 @@
 // src/components/AdminNavBar.jsx
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +17,7 @@ const AdminNavBar = () => {
     <nav className="bg-blue-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
-          <Link to="/admin">Admin Dashboard</Link>
+          <Link to="/admin">Administrador mayorista</Link>
         </div>
         <ul className="flex space-x-4 items-center">
           {isAuthenticated && (

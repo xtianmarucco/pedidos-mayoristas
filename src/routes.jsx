@@ -7,7 +7,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/private-router/PrivateRoute';
 import OrderHistoryPage from './pages/OrderHistoryPage'; // Importa el nuevo componente de historial
-
+import AdminOrderHistory from './pages/AdminOrderHistory';
 
 const AppRoutes = () => {
   return (
@@ -28,6 +28,14 @@ const AppRoutes = () => {
         element={
           <PrivateRoute roles={['admin']}>
             <AdminPage />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/admin/order-history"
+        element={
+          <PrivateRoute roles={['admin']}>
+            <AdminOrderHistory/>
           </PrivateRoute>
         }
       />

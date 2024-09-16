@@ -7,7 +7,7 @@ import { faTimes, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
 const CartModal = ({ onClose }) => {
-  const cartItems = useSelector((state) => state.cart.items);
+  const cartItems = useSelector((state) => state.cart) || [];
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

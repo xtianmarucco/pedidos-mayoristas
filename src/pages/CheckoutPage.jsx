@@ -1,14 +1,14 @@
 // src/pages/CheckoutPage.jsx
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import Navbar from "../components/customer-navbar/CustomerNavBar";
+import Navbar from "../components/customer-navbar/CustomerNavBar"
 import OrderSuccessModal from "../components/order-success-modal/OrderSuccessModal";
 import OrderFailureModal from "../components/order-fail-modal/OrderFailureModal";
 import Loader from "../components/loader/loader";
 import supabase from "../supabaseClient";
 
 const CheckoutPage = () => {
-  const cartItems = useSelector((state) => state.cart.items);
+  const cartItems = useSelector((state) => state.cart);
   const user = useSelector((state) => state.auth.user);
 
   const totalPrice = cartItems.reduce(
@@ -34,7 +34,9 @@ const CheckoutPage = () => {
       status: "Pending",
     };
     return order;
+    
   };
+  console.log(cartItems);
 
   const [loading, setLoading] = useState(false); // Establece loading en false inicialmente
   const [isOrderSuccessModalOpen, setIsOrderSuccessModalOpen] = useState(false);
@@ -55,6 +57,7 @@ const CheckoutPage = () => {
     }
     setLoading(false); // Oculta el Loader
   };
+ 
 
   return (
     <>

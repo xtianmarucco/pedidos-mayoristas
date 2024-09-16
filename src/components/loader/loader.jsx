@@ -1,5 +1,6 @@
 
-export const Loader = () => {
+
+const Loader = () => {
   return (
     <div       className="fixed width-50 inset-0 bg-black bg-opacity-10 flex justify-center items-center z-50"
 >
@@ -22,7 +23,7 @@ export const Loader = () => {
         </svg>
         <span className="sr-only">Loading...</span>
       </div>
-      </div>
+      </div>  )
+}
 
-  );
-};
+export default Loader;

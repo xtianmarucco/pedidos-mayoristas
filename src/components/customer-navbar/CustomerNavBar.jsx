@@ -15,7 +15,7 @@ import { logout } from "../../features/auth/authSlice";
 
 const CustomerNavBar = () => {
   const [isCartOpen, setIsCartOpen] = React.useState(false);
-  const cartItems = useSelector((state) => state.cart.items);
+  const cartItems = useSelector((state) => state.cart) || [];
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const totalQuantity = cartItems.reduce(
     (total, item) => total + item.quantity,
