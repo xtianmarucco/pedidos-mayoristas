@@ -1,8 +1,8 @@
 // src/routes.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import CustomerPage from './pages/CustomerPage';
 import AdminPage from './pages/AdminPage';
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/HomePage';
 import CheckoutPage from './pages/CheckoutPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/private-router/PrivateRoute';
@@ -13,7 +13,7 @@ const AppRoutes = () => {
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<Navigate to="/login"/>} />
       <Route path="/login" element={<LoginPage />} />
       <Route
         path="/customer"
