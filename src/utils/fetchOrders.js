@@ -30,6 +30,7 @@ export const fetchOrdersAndUsers = async () => {
       userName: usersMap[order.user_id]?.name,
       userAddress: usersMap[order.user_id]?.address,
     }));
+    console.log(combinedOrders[0])
 
     return { data: combinedOrders, error: null };
   } catch (error) {
