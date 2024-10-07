@@ -1,13 +1,13 @@
 // src/pages/LoginPage.jsx
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { login } from '../features/auth/authSlice';
-import supabase from '../supabaseClient';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../features/auth/authSlice";
+import supabase from "../supabaseClient";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
   const [error, setError] = useState(null);
@@ -25,7 +25,7 @@ const LoginPage = () => {
 
     // Validar email
     if (!validateEmail(email)) {
-      setEmailError('Formato de email inválido');
+      setEmailError("Formato de email inválido");
       valid = false;
     } else {
       setEmailError(null);
@@ -33,7 +33,7 @@ const LoginPage = () => {
 
     // Validar contraseña
     if (!password) {
-      setPasswordError('La contraseña no puede estar vacía');
+      setPasswordError("La contraseña no puede estar vacía");
       valid = false;
     } else {
       setPasswordError(null);
@@ -45,19 +45,19 @@ const LoginPage = () => {
 
     // Autenticar al usuario
     const { data: user, error } = await supabase
-      .from('users')
-      .select('*')
-      .eq('email', email)
+      .from("users")
+      .select("*")
+      .eq("email", email)
       .single();
 
     if (error || !user) {
-      setError('Correo electrónico o contraseña inválidos');
+      setError("Correo electrónico o contraseña inválidos");
       return;
     }
 
     // Verificar el hash de la contraseña (aquí simplificado como comparación directa)
     if (user.password_hash !== password) {
-      setError('Correo electrónico o contraseña inválidos');
+      setError("Correo electrónico o contraseña inválidos");
       return;
     }
 
@@ -65,10 +65,10 @@ const LoginPage = () => {
     dispatch(login(user));
 
     // Redirigir según el rol del usuario
-    if (user.role === 'admin') {
-      navigate('/admin');
-    } else if (user.role === 'customer') {
-      navigate('/customer');
+    if (user.user_type === "admin") {
+      navigate("/admin");
+    } else if (user.user_type === "customer") {
+      navigate("/customer");
     }
   };
 
@@ -78,9 +78,11 @@ const LoginPage = () => {
         <h1 className="text-4xl font-bold mb-10">Pedidos mayoristas</h1>
         <h3 className="text-2xl font-bold mb-10">ingresa</h3>
         <form onSubmit={handleLogin} className="w-full max-w-sm">
-          {error && <p className="text-red-500 mb-4">{error}</p>}
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -90,10 +92,15 @@ const LoginPage = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
-            {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
+            )}
           </div>
           <div className="mb-6">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="password"
+            >
               Password
             </label>
             <input
@@ -103,7 +110,10 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
-            {passwordError && <p className="text-red-500 text-sm mt-1">{passwordError}</p>}
+            {passwordError && (
+              <p className="text-red-500 text-sm mt-1">{passwordError}</p>
+            )}
+            {error && <p className="text-red-500 mb-4">{error}</p>}
           </div>
           <div className="flex items-center justify-between">
             <button
@@ -115,7 +125,10 @@ const LoginPage = () => {
           </div>
         </form>
       </div>
-      <div className="w-1/2 bg-cover  bg-no-repeat bg-center" style={{ backgroundImage: `url('/login-bkg.jpeg')` }}>
+      <div
+        className="w-1/2 bg-cover  bg-no-repeat bg-center"
+        style={{ backgroundImage: `url('/login-bkg.jpeg')` }}
+      >
         {/* La imagen de fondo cubre toda el área */}
       </div>
     </div>
