@@ -36,7 +36,7 @@ const CheckoutPage = () => {
     return order;
     
   };
-  console.log(cartItems);
+  // console.log(cartItems);
 
   const [loading, setLoading] = useState(false); // Establece loading en false inicialmente
   const [isOrderSuccessModalOpen, setIsOrderSuccessModalOpen] = useState(false);

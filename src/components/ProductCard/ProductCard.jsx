@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     >
-      <div className="w-60 min-h-[300px] max-h-[400px] rounded shadow-lg m-4 flex flex-col justify-between bg-white fade-in-up">
+      <div className="w-60 min-h-[400px] max-h-[350px] rounded shadow-lg m-4 flex flex-col justify-between bg-white fade-in-up">
         <img
           className="w-full h-40 object-contain"
           src={product.image_url}

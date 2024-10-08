@@ -1,7 +1,6 @@
 // src/components/ProductDetailModal.jsx
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { addItem } from '../../features/cart/cartSlice';
@@ -33,11 +32,11 @@ const ProductDetailModal = ({ product, onClose }) => {
           <FontAwesomeIcon icon={faTimes} size="lg" />
         </button>
         <div className="w-1/2 h-full justify-center item-center">
-          <img className="h-full object-cover  rounded-l-lg" src={product.image} alt={product.name} />
+          <img className="h-full object-cover  rounded-l-lg" src={product.image_url} alt={product.name} />
         </div>
         <div className="w-1/2 pl-6 flex  mt-10 flex-col">
           <div>
-            <h2 className="text-2xl mt-auto font-bold mb-4">{product.name}</h2>
+            <h2 className="text-2xl mt-auto font-bold mb-4">{product.product_name}</h2>
             <p className="text-gray-700 mt-10 mb-4">{product.description}</p>
           </div>
           <div className="flex justify-left mt-auto mb-4">
