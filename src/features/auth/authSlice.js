@@ -1,7 +1,7 @@
 // src/features/auth/authSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
-const EXPIRATION_TIME_MS = 7 * 24 * 60 * 60 * 1000; // 7 días en milisegundos
+const EXPIRATION_TIME_MS = 72 * 60 * 60 * 1000; // 7 días en milisegundos
 
 // Verificar si la sesión ha expirado
 const isSessionExpired = () => {
